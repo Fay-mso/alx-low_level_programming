@@ -1,5 +1,3 @@
-vi 101-natural.c
-
 #include <stdio.h>
 
 /**
