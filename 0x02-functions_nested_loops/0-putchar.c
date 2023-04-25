@@ -1,6 +1,6 @@
 #include "main.h"
 	/**
-	 * main - print _putchar
+	 * main - Main  print _putchar followed by new line
 	 * Kamakia coding
 	 * Return: 0
 	 */
