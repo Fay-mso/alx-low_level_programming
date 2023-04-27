@@ -1,11 +1,12 @@
 #include <stdio.h>
+#include "main.h"
 #include <stdlib.h>
 #include <time.h>
 /**
- * main-program entry point.
+ * positive_or_negative Test function for positive or negative
  * Return:0-no error,non zero value if error.
  **/
-int main(void)
+void positive_or_negative (void)
 {
 	int n;
 
@@ -21,5 +22,5 @@ int main(void)
 	}
 	else if (n == 0)
 		printf("%d is zero\n", n);
-	return (0);
+	return;
 }
