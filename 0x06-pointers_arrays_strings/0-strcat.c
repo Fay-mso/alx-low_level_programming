@@ -7,14 +7,38 @@
  * and then adds a terminating null byte
  * Return (0) success
  */
+ 
 
-void char *_strcat(char *dest, char *src){
-	char str1[]="dest", str2[]="src";
+ char *_strcat(char *dest, char *src)
+{
+	int k;
+	int h;
+	
+	k=0;
+		while (dest[k]=!'\0')
+	{
+		k++;
+	}
 
-	char *dest;
-	char *src;
+	h=0;
+	while (src[h]=!'\0')
+		
+	{
 
-	strcat(str1, str2);
+		h++;
 
-	return (0);
+	}
+
+	{
+
+	dest[k]=src[h];
+	
+	k++;
+	h++;
+
+	}	
+	dest[k]='\0';
+	
+	return (dest);
+
 }
