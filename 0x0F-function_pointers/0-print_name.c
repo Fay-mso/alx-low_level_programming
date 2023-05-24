@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include "function_pointers.h"
 /**
+*print_name-prints a given name by using provided function
 *function that prints the name
 *@name: the string to be added
 *@f: is the pointer to the function
