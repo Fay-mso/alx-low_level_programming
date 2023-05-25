@@ -1,3 +1,5 @@
+#ifndef print_numbers_h
+#define print_numbers_h
 #include <stdio.h>
 #include <string.h>
 #include <stdarg.h>
@@ -24,4 +26,5 @@ printf("%s", separator);
 }
 printf("\n");
 va_end(numbers);
+#endif
 }
