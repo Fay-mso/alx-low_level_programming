@@ -1,5 +1,3 @@
-#ifndef print_numbers_h
-#define print_numbers_h
 #include <stdio.h>
 #include <string.h>
 #include <stdarg.h>
@@ -10,21 +8,19 @@
 *@separator: string that is printed between numbers
 *@n: integers passed
 *@...: indicates function accepts various arguments
-*Return: numbers
+*Return: nums
 **/
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-unsigned int j;
-va_list numbers;
-va_start(numbers, n);
-for (j = 0; j < n; j++)
-va_arg(numbers, int);
+unsigned int index;
+va_list nums;
+va_start(nums, n);
+for (index = 0; index < n; index++)
 {
-printf("%d", va_arg(numbers, int));
-if (j != (n - 1) && separator != NULL)
+printf("%d", va_arg(nums, int));
+if (index != (n - 1) && separator != NULL)
 printf("%s", separator);
 }
+va_end(nums);
 printf("\n");
-va_end(numbers);
-#endif
 }
