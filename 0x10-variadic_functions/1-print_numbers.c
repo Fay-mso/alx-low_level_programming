@@ -8,20 +8,20 @@
 *@separator: string that is printed between numbers
 *@n: integers passed
 *@...: indicates function accepts various arguments
-*Return: num
+*Return: numbers
 **/
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 unsigned int j;
-va_list num;
-va_start(num, n);
+va_list numbers;
+va_start(numbers, n);
 for (j = 0; j < n; j++)
-va_arg(num, int);
+va_arg(numbers, int);
 {
-printf("%d", va_arg(num, int));
-if (j != (n - 1) && separator != NULL)
+printf("%d", va_arg(numbers, int));
+if (j < (n - 1) && separator != NULL)
 printf("%s", separator);
 }
 printf("\n");
-va_end(num);
+va_end(numbers);
 }
