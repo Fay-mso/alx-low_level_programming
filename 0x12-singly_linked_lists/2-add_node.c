@@ -1,5 +1,5 @@
 #include <string.h>
-#include <string.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include "lists.h"
 /**
@@ -28,5 +28,5 @@ return (NULL);
 new_node->len = strlen(str);
 new_node->next = *head;
 *head = new_node;
-return (new_node);
+return (*head);
 }
