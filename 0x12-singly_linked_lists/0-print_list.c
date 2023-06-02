@@ -21,7 +21,7 @@ if (h->str == NULL)
 printf("[0] (nil)\n");
 else
 {
-printf("[%lu] %s\n", (unsigned long)(count + 1), h->str);
+printf("[%u] %s\n", h->len, h->str);
 h = h->next;
 count++;
 }
