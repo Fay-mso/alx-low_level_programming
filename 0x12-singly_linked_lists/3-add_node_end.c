@@ -35,5 +35,5 @@ while (current->next != NULL)
 current = current->next;
 current->next = new_node;
 }
-return (NULL);
+return (new_node);
 }
