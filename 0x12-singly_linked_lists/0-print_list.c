@@ -9,21 +9,20 @@
 **/
 size_t print_list(const list_t *h)
 {
-const list_t *current = h;
 size_t count = 0;
-if (current == NULL)
+if (h == NULL)
 {
 printf("[0] (nil)\n");
 return (count);
 }
-while (current != NULL)
+while (h != NULL)
 {
-if (current->str == NULL)
+if (h->str == NULL)
 printf("[0] (nil)\n");
 else
 {
-printf("[%lu] %s\n", (unsigned long)(count + 1), current->str);
-current = current->next;
+printf("[%lu] %s\n", (unsigned long)(count + 1), h->str);
+h = h->next;
 count++;
 }
 }
