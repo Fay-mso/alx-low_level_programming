@@ -4,6 +4,11 @@ section .text
 extern printf
 global main
 main:
+mov   edi, format
+xor   eax, eax
+call  printf
+mov   eax, 0
+ret
 ; Save callee-saved registers
 push rbx
 push rbp
@@ -29,3 +34,4 @@ pop rbx
 mov eax, 0x60
 xor edi, edi
 syscall
+
