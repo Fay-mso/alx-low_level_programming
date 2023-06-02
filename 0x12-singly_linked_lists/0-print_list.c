@@ -2,7 +2,6 @@
 #include <string.h>
 #include <stdlib.h>
 #include "lists.h"
-#include <stdbool.h>
 /**
 *print_list - prints all elements of list_h
 *@h: pointer to list_t
