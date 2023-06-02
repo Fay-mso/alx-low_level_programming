@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include "list.h"
+#include "lists.h"
 #include <stdbool.h>
 /**
 *print_list - prints all elements of list_h
