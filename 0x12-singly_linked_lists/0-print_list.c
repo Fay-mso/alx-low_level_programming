@@ -23,7 +23,7 @@ if (current->str == NULL)
 printf("[0] (nil)\n");
 else
 {
-printf("[%lu] %s\n",(unsigned long)(count + 1), current->str);
+printf("[%lu] %s\n", (unsigned long)(count + 1), current->str);
 current = current->next;
 count++;
 }
